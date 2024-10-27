@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     // Use 'sh' step to execute shell commands
-                    sh 'docker build /var/lib/jenkins/workspace/Diplom/BackEnd/Amazone-clone/ --tag=back'
+                    sh 'docker build /var/lib/jenkins/workspace/Diplom/BackEnd/Amazon-clone/ --tag=back'
                 }
             }
         }
