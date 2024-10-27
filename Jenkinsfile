@@ -34,5 +34,13 @@ pipeline {
                 }
             }
         }
+         stage('docker-run-back') {
+            steps {
+                script {
+                    // Use 'sh' step to execute shell commands
+                    sh 'docker run -d -p 80:80 back'
+                }
+            }
+        }
     }
 }
