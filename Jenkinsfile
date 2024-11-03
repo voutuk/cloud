@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     // Use 'sh' step to execute shell commands
-                    sh 'docker build /var/lib/jenkins/workspace/Diplom/FrontEnd/my-app/ --tag=front'
+                    sh 'docker build /var/lib/jenkins/workspace/213/FrontEnd/my-app/ --tag=front'
                 }
             }
         }
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     // Use 'sh' step to execute shell commands
-                    sh 'docker build /var/lib/jenkins/workspace/Diplom/BackEnd/Amazon-clone/ --tag=back'
+                    sh 'docker build /var/lib/jenkins/workspace/213/BackEnd/Amazon-clone/ --tag=back'
                 }
             }
         }
